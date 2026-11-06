@@ -28,7 +28,7 @@ function Countdown() {
     return () => clearInterval(timer)
   }, [])
   const parts = left > 0 ? { days: Math.floor(left / 86400000), hours: Math.floor(left / 3600000) % 24, minutes: Math.floor(left / 60000) % 60, seconds: Math.floor(left / 1000) % 60 } : { days: 0, hours: 0, minutes: 0, seconds: 0 }
-  return <div className="countdown" aria-label="Countdown to the event"><p className="eyebrow">Counting down to the big day</p><div className="count-grid">{Object.entries(parts).map(([label, value]) => <div className="count-cell" key={label}><strong>{String(value).padStart(2, '0')}</strong><span>{label}</span></div>)}</div></div>
+  return <div className="countdown" aria-label="Countdown to the event"><p className="eyebrow">Counting down to the big day</p><div className="count-grid">{Object.entries(parts).map(([label, value]) => <div className="count-cell" key={label}><strong suppressHydrationWarning>{String(value).padStart(2, '0')}</strong><span>{label}</span></div>)}</div></div>
 }
 
 export default function Page() {
