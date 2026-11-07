@@ -3,7 +3,6 @@
 Evently is a responsive event landing page for a free one-day gathering in Bhubaneswar.
 
 ## Features
-
 - Responsive event landing page with animated interactions
 - Live countdown to 12 December 2026
 - Schedule filtering by track
