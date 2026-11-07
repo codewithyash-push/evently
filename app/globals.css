@@ -74,10 +74,23 @@ em { color: var(--coral); font-style: normal; }
 .schedule-row:hover { background: #f5f3ed; padding-left: 10px; }
 .schedule-row:hover .row-chevron { color: var(--coral); transform: translateX(4px); }
 .row-chevron { transition: color .2s ease, transform .2s ease; }
-main[data-theme='dark'] { --ink: #f4f4ed; --cream: #171914; --paper: #20231d; --line: #3c4037; --muted: #aeb4a6; }
-main[data-theme='dark'] .nav { background: color-mix(in srgb, var(--cream) 90%, transparent); }
+main { min-height: 100vh; background: var(--cream); color: var(--ink); }
+main[data-theme='dark'] { --ink: #f4f4ed; --cream: #171914; --paper: #20231d; --line: #3c4037; --muted: #aeb4a6; background: var(--cream); color: var(--ink); }
+main[data-theme='dark'] .nav { background: color-mix(in srgb, var(--cream) 90%, transparent); color: var(--ink); }
+main[data-theme='dark'] .hero-sub, main[data-theme='dark'] .section-intro, main[data-theme='dark'] .hero-meta, main[data-theme='dark'] footer { color: var(--muted); }
+main[data-theme='dark'] .hero-caption { background: var(--paper); border-color: var(--ink); }
+main[data-theme='dark'] .play-icon { border-color: var(--ink); }
+main[data-theme='dark'] footer .brand { color: var(--ink); }
 main[data-theme='dark'] .schedule { background: var(--paper); }
 main[data-theme='dark'] .schedule-row:hover { background: #2a2d26; }
+main[data-theme='dark'] .feature-large { background: #304354; }
+main[data-theme='dark'] .feature-yellow { background: #8f681e; color: #fff9e8; }
+main[data-theme='dark'] .feature-dark { background: #0b0d0b; color: #f4f4ed; }
+main[data-theme='dark'] .feature-dark p { color: #c8cec0; }
+main[data-theme='dark'] .shape-front { background: #52677a; }
+main[data-theme='dark'] .blue { background: #7eb7df; }
+main[data-theme='dark'] .button-dark { background: #f4f4ed; color: #171914; }
+main[data-theme='dark'] .button-dark:hover { background: var(--coral); color: white; }
 main[data-theme='dark'] .ticket-card { color: #20221d; }
 .theme-toggle { border: 1px solid var(--line); background: transparent; color: var(--ink); border-radius: 999px; padding: 8px 11px; font-size: 11px; font-weight: 800; }
 .theme-toggle:hover { background: var(--ink); color: var(--cream); }
