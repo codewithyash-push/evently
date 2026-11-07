@@ -5,7 +5,6 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'evently — Make room for better ideas',
   description: 'A one-day gathering for people who care about what they are making and what comes next.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
